@@ -12,6 +12,7 @@ git reset --hard HEAD^
 cat readme.txt
 git reflog
 管理修改
-git checkout
+git checkout 检出(即便删除了, 也可用这个恢复)
 git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到git checkout命令。
 Git同样告诉我们，用命令git reset HEAD <file>可以把暂存区的修改撤销掉（unstage），重新放回工作区
+rm test.txt
