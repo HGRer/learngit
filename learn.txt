@@ -11,3 +11,4 @@ git log
 git reset --hard HEAD^
 cat readme.txt
 git reflog
+管理修改
