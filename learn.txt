@@ -1,34 +1,34 @@
-﻿ls -ah
-git init
-git config --global user.name
-git config --global user.email
-pwd
-git commit -m
-git add
-git status
-git diff
-git log
-git reset --hard HEAD^
-cat readme.txt
-git reflog
-管理修改
-git checkout 检出(即便删除了, 也可用这个恢复)
-git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到git checkout命令。
-Git同样告诉我们，用命令git reset HEAD <file>可以把暂存区的修改撤销掉（unstage），重新放回工作区
-rm test.txt
-git push -u origin master
-git remote add origin git@server-name:path/repo-name.git
-git push -u origin master第一次推送master分支的所有内容；
-git push origin master推送最新修改
-git clone git@github.com:michaelliao/gitskills.git
-{
-	$ git checkout -b dev
-	Switched to a new branch 'dev'
-	git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
-	$ git branch dev
-	$ git checkout dev
-	Switched to branch 'dev'
-}
-git merge dev
-git branch -d dev
-git merge --no-ff -m "merge with no-ff" dev
+﻿	ls -ah
+	git init
+	git config --global user.name
+	git config --global user.email
+	pwd
+	git commit -m
+	git add
+	git status
+	git diff
+	git log
+	git reset --hard HEAD^
+	cat readme.txt
+	git reflog
+	管理修改
+	git checkout 检出(即便删除了, 也可用这个恢复)
+	git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到git checkout命令。
+	Git同样告诉我们，用命令git reset HEAD <file>可以把暂存区的修改撤销掉（unstage），重新放回工作区
+	rm test.txt
+	git push -u origin master
+	git remote add origin git@server-name:path/repo-name.git
+	git push -u origin master第一次推送master分支的所有内容；
+	git push origin master推送最新修改
+	git clone git@github.com:michaelliao/gitskills.git
+	{
+		$ git checkout -b dev
+		Switched to a new branch 'dev'
+		git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+		$ git branch dev
+		$ git checkout dev
+		Switched to branch 'dev'
+	}
+	git merge dev
+	git branch -d dev
+	git merge --no-ff -m "merge with no-ff" dev
